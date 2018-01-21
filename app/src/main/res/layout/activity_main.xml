@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/OpenGallery"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+
+                    android:layout_alignBaseline="@+id/OpenCamera"
+                    android:layout_alignBottom="@+id/OpenCamera"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gallery_icon" />
+
+                <Button
+                    android:id="@+id/OpenCamera"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/camera_icon" />
+
+
+                <Button
+                    android:id="@+id/RealTime"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/OpenGallery"
+                    android:layout_marginEnd="31dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/icon_realtt" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+
+                    app:srcCompat="@mipmap/ic_launcher"
+
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_below="@+id/OpenCamera"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/toSpeech"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tts_icon" />
+
+                <Button
+                    android:id="@+id/TTSTOP"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_above="@+id/textView"
+                    android:layout_alignEnd="@+id/textView"
+                    android:layout_marginEnd="58dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/muted" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="350dp"
+                    android:layout_height="500dp"
+                    android:layout_below="@+id/toSpeech"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="22dp"
+                    android:text="SONUCLAR BURAYA DUSUCEKTIR" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
