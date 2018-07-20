@@ -2,7 +2,7 @@
     <string name="app_name" translatable="false">OCRtoSpeech</string>
     <string name="action_settings" translatable="false">Settings</string>
     <string name="image_dialog_description" translatable="false">Image Preview</string>
-  <string name="username">Username</string>
+    <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="old_password">Old password</string>
     <string name="new_password">New password</string>
@@ -81,7 +81,7 @@
     <string name="incorrectAccountID">Incorrect Member Account ID!!!</string>
     <string name="resultMessages">RESULT MESSAGES</string>
     <string name="incorrectUsernameorPassword">Incorrect Username or Password!!!</string>
-    <string name="wrongSecPinCode">Incorrect Security Pin!!!</string>
+    <string name="wrongSecPinCode" translatable="false">Incorrect Security Pin!!!</string>
     <string name="loginError">Username or Password is incorrect!!!</string>
     <string name="accountId">Account ID</string>
     <string name="memberName">Member Name</string>
